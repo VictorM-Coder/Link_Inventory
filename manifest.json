@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Web Inventory",
+  "description": "Extensão para salvamento de links",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "nerd_notes.svg"
+  }
+}

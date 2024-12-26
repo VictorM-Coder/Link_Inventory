@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./style/style.css"/>
+    <title>Web Inventory</title>
+</head>
+
+<body class="body-li">
+<header class="header-li">
+    <div class="top-header">
+        <h1 class="title-menu">Web Inventory</h1>
+        <button class="btn-secondary">Donate</button>
+    </div>
+
+    <nav>
+        <ul class="ul-menu">
+            <li class="li-menu li-menu-selected">
+                <img
+                        src="icons/add_link.svg"
+                        alt="add a link icon"
+                        class="img-menu"
+                />
+                Add a link
+            </li>
+            <li class="li-menu">
+                <img
+                        src="icons/book.svg"
+                        alt="book icon"
+                        class="img-menu"
+                />
+                Library
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main-home">
+    <div>
+
+    </div>
+    <form>
+        <div class="input-row-center">
+            <div class="col-li">
+                <label for="input-name" class="label-li">Name</label>
+                <input type="text" id="input-name" class="input-li"/>
+            </div>
+            <div class="col-li">
+                <label for="select-category" class="label-li">Category</label>
+                <select id="select-category" class="select-li">
+                    <option value="" disabled selected>category</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="input-row-center">
+            <div class="col-li">
+                <label class="label-li" for="input-url">Url</label>
+                <div class="input-wrapper">
+                    <input id="input-url" type="url" class="input-li" placeholder="add a url..."/>
+                    <button class="btn-icon">
+                        <img alt="Paste icon" src="./icons/paste-icon.svg"/>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="input-row-end">
+            <button class="btn-primary">Save Url</button>
+            <button id="btn-cancel" class="btn-tertiary">Cancel</button>
+        </div>
+    </form>
+</main>
+</body>
+<script src="scripts/popup.js"></script>
+</html>

@@ -29,10 +29,6 @@ html, body {
     display: flex;
     list-style: none;
     justify-content: space-around;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.2em;
-    color: var(--color-dark);
-    font-weight: 700;
     margin: 0;
     padding-inline-start: 0;
     background-color: var(--color-primary-lighter);
@@ -40,25 +36,32 @@ html, body {
     border-top: var(--color-dark) 2px solid;
 }
 
-.li-menu {
+.ul-menu li {
+    width: 100%;
+}
+
+.btn-menu {
     width: 100%;
     text-align: center;
     padding: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: transparent;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    color: var(--color-dark);
+    font-weight: 700;
+    border: none;
 }
 
-.li-menu:hover {
+.btn-menu:hover {
     cursor: pointer;
 }
 
-.li-menu-selected {
+.btn-menu:disabled {
     background-color: var(--color-primary-light);
-}
-
-.li-menu-selected:hover {
-    cursor: auto;
+    cursor: default;
 }
 
 .body-li {
